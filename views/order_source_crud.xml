@@ -1,0 +1,36 @@
+<odoo>
+  <data>
+    <record id="view_sales_sources_tree" model="ir.ui.view">
+      <field name="name">sale.ordersource.tree</field>
+      <field name="model">sale.ordersource</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <!-- Add more fields if needed -->
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_sales_sources_form" model="ir.ui.view">
+      <field name="name">sale.ordersource.form</field>
+      <field name="model">sale.ordersource</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="name"/>
+              <!-- Add more fields if needed -->
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_sale_source" model="ir.actions.act_window">
+      <field name="name">Sources</field>
+      <field name="res_model">sale.ordersource</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="view_sales_sources_tree"/>
+    </record>
+  </data>
+</odoo>

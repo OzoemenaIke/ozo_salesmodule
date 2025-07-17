@@ -1,0 +1,11 @@
+<odoo>
+  <data>
+
+        <!-- Add Sources menu under Configuration -->
+    <menuitem id="menu_sale_source"
+              name="Sources"
+              parent="sale.menu_sale_config"
+              action="action_sale_source"
+              sequence="55"/>
+  </data>
+</odoo>

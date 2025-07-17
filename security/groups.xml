@@ -1,0 +1,9 @@
+<odoo>
+  <record id="group_ordersource_user" model="res.groups">
+    <field name="name">OrderSource User</field>
+  </record>
+
+  <record id="group_ordersource_manager" model="res.groups">
+    <field name="name">OrderSource Manager</field>
+  </record>
+</odoo>
