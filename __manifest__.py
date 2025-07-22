@@ -23,9 +23,9 @@ Long description of module's purpose
     'data': [
 'security/groups.xml',
          'security/ir.model.access.csv',
-        'views/order_source_crud.xml',
-        'views/order_source_field.xml',
-        'views/order_source_navigation_menu.xml',
+        'views/sale_order_source_views.xml',
+        'views/sale_order_views.xml',
+        'views/menus.xml',
 
     ],
    'installable': True,
